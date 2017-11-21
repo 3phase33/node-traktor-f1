@@ -105,6 +105,7 @@ var count = 0;
 var beatFirstHalf2 = true;
 var lastBeatMillis = new Date().getTime();
 
+/*
 var beatPulse2 = function() {
 	if(beatFirstHalf2) {
 		f1.setLED('quant',1);
@@ -121,8 +122,9 @@ var beatPulse2 = function() {
 };
 
 var pulseInterval = setInterval(beatPulse2,30000/bpm);
+*/
 
-
+/*
 var frameProgress = 0;
 
 var doFrame = function() {
@@ -137,7 +139,7 @@ var doFrame = function() {
 setInterval(doFrame,25);
 
 doFrame();
-
+*/
 
 var hue=0, sat=0, val=0, dist = 1;
 
@@ -185,6 +187,7 @@ f1.on('s4:changed',function(e) {
 
 var flashOffCount = 0;
 
+/*
 setInterval(function() {
 	if(flashOffCount < 5) {
 		f1.setLED('shift',0);
@@ -195,6 +198,7 @@ setInterval(function() {
 		flashOffCount = 0;
 	}
 },25);
+*/
 
 var strobeInteravl = null;
 var strobeOffCount = 0;
